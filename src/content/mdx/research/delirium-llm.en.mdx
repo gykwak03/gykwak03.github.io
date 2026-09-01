@@ -1,0 +1,27 @@
+Delirium is common in intensive care, but the clinical variables used to predict
+it differ substantially across studies. This study evaluated whether large
+language models can prioritize variables for incident ICU delirium **without
+access to patient outcomes**, treating literature-level model knowledge as a
+potential prior for feature selection rather than as a substitute for empirical
+labels.
+
+Eleven delirium-prediction studies were reviewed to define 107 clinical features,
+which were operationalized as 151 analysis-ready MIMIC-IV variables. The final
+leakage-aware cohort contained **32,574 first ICU stays**, including 2,728 cases
+of delirium first documented after the initial 24-hour observation window. This
+design separated baseline predictor collection from the incident outcome period
+and reduced the risk of including variables recorded after delirium onset.
+
+GPT-4.1, Claude Sonnet 4.5, and Gemini 2.5 Pro were evaluated with Scoring,
+Ranking, and Sequencing prompts. Each model–procedure combination was repeated
+five times to quantify run-to-run stability; a log-prior procedure was also tested
+with GPT-4.1. Reproducibility was assessed using rank agreement and top-k overlap,
+and selected subsets were benchmarked with stratified five-fold XGBoost models.
+
+The prompting procedure influenced reproducibility more strongly than the choice
+of LLM, with Scoring producing the most stable rankings. The best 30-feature LLM
+subset retained **93.0% of the full-pool AUROC**, although supervised feature
+selectors remained stronger when outcome labels were available. The findings
+support LLM-based selection as a complementary prior for narrowing an initial
+clinical feature space, especially before a fully labeled cohort is available.
+The manuscript is currently under submission.

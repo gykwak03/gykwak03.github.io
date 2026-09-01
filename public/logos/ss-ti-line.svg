@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">SS-TI nutrition survey</title>
+  <rect width="512" height="512" fill="#ffffff"/>
+  <g fill="none" stroke="#111111" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M126 126h260a28 28 0 0 1 28 28v232a28 28 0 0 1-28 28H126a28 28 0 0 1-28-28V154a28 28 0 0 1 28-28Z"/>
+    <path d="M190 100h132v58H190z" fill="#ffffff"/>
+    <path d="M148 206h170"/>
+    <path d="M148 250h134"/>
+    <circle cx="177" cy="332" r="57" fill="#ffffff"/>
+    <path d="m148 331 20 21 39-45"/>
+    <path d="M322 321c31-23 77-12 89 29 13 46-14 99-61 99s-74-53-61-99c5-17 17-28 33-29Z" fill="#ffffff"/>
+    <path d="M350 318c-2-24 7-43 28-56"/>
+    <path d="M355 288c20-19 43-21 58-16-5 22-24 37-58 36" fill="#ffffff"/>
+  </g>
+</svg>

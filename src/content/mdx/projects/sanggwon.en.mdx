@@ -1,0 +1,33 @@
+**Show Me The Sanggwon** is a decision-support service for prospective restaurant
+owners comparing vacant sites in Seoul. Instead of presenting commercial-area
+statistics separately, it connects each listing to an estimated probability of
+remaining open for three years, structured search filters, and an explainable
+location report. The completed service won the Grand Prize in the Product &
+Service Development category within the Startup Division of the 2026 Seoul
+Metropolitan Government Big Data Competition and received the Mayor of Seoul
+Award.
+
+The prediction target was defined at the cohort level: a restaurant opening in
+year Y was labeled according to whether it remained in operation through the end
+of Y+3. Four opening cohorts from 2019 to 2022 were constructed so that every
+feature reflected information available at the relevant opening-year cutoff.
+The data pipeline integrates **16 public datasets** covering licenses,
+population, spending, sales, store density, transport, buildings, land prices,
+and prior business history. Eleven processing stages use spatial joins and
+BallTree neighborhoods at 250, 500, and 1,000 meters to generate 139 candidate
+features, including local demand, competition, accessibility, and site-history
+signals.
+
+The XGBoost pipeline combines numeric imputation with target encoding and was
+evaluated on **61,823 restaurant records**. Chronological validation trained on
+the 2019–2021 cohorts and tested on the 2022 cohort, producing an AUROC of
+**0.71**. Future events were excluded from occupancy and business-history
+features, and offline feature definitions were aligned with the serving pipeline
+to reduce train–serve skew. Rank-preserving calibration converted model outputs
+into service probabilities, while TreeSHAP identified the five most influential
+factors for each listing.
+
+The live workflow links these components into a single report: users select a
+site and business category, review its survival score, and inspect the local
+conditions that raised or lowered the estimate. The output is presented as a
+comparative planning signal rather than a guarantee of business success.

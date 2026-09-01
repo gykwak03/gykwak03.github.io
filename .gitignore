@@ -1,0 +1,58 @@
+# Dependencies
+/node_modules/
+/.pnp/
+.pnp.*
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/versions/
+
+# Next.js and production output
+/.next/
+/out/
+/build/
+
+# Tests and coverage
+/coverage/
+
+# Local working and generated files
+/tmp/
+/output/
+/references/archive/
+
+# Python
+__pycache__/
+*.py[cod]
+/.venv/
+/venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Deployment providers
+/.vercel/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+/.idea/
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/settings.json
+

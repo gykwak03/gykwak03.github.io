@@ -1,0 +1,27 @@
+**DentiScan** is a two-stage screening prototype for suspected caries and tooth
+wear in a single oral photograph. A detector first localizes small candidate
+regions, and a second classifier reviews each crop to remove regions predicted
+as normal. This detect-then-verify design was selected to address uneven lighting,
+small lesion boundaries, and normal tooth textures that can resemble disease in
+consumer-quality images.
+
+The project used AlphaDent, approximately 1,200 high-resolution photographs from
+295 patients. Pixel-level masks were converted into detection labels, and 14,497
+cropped images were prepared for four-way classification. Model development
+included ablation studies and comparisons between RF-DETR and D-FINE for
+detection and between Swin Transformer and RegNet for crop classification.
+Because abrasion objects outnumbered caries by 1.76 to 1, Copy-Paste augmentation
+increased the number of caries objects by 25% while preserving the surrounding
+oral-image context.
+
+The final architecture paired RF-DETR with a Swin Transformer. Copy-Paste
+augmentation raised caries recall from **0.3206 to 0.5370 (+67%)**, caries
+mAP@0.5:0.95 from 0.1706 to 0.3219, and overall detector recall from 0.5736 to
+0.6216. Evaluation on a second dataset produced a marked decline in performance,
+indicating sensitivity to image source and acquisition conditions rather than
+consistent cross-domain generalization.
+
+The inference pipeline was integrated into a Streamlit application and deployed
+on AWS EC2. The result screen reports candidate boxes, confidence scores, lesion
+counts, and cropped regions, while explicitly presenting the output as screening
+support that requires professional dental assessment rather than as a diagnosis.

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Book-delivery robot</title>
+  <rect width="512" height="512" fill="#ffffff"/>
+  <g fill="none" stroke="#111111" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M196 132c34-32 86-32 120 0"/>
+    <path d="M220 160c20-18 52-18 72 0"/>
+    <path d="M128 254c4-34 18-54 52-54h152c34 0 48 20 52 54l14 86c2 14-8 26-22 26H136c-14 0-24-12-22-26l14-86Z"/>
+    <path d="M146 250h220"/>
+    <path d="M142 294h166l32 28h52"/>
+    <circle cx="160" cy="366" r="46" fill="#ffffff"/>
+    <circle cx="256" cy="366" r="46" fill="#ffffff"/>
+    <circle cx="352" cy="366" r="46" fill="#ffffff"/>
+    <circle cx="160" cy="366" r="20"/>
+    <circle cx="256" cy="366" r="20"/>
+    <circle cx="352" cy="366" r="20"/>
+  </g>
+  <circle cx="256" cy="181" r="9" fill="#111111"/>
+</svg>

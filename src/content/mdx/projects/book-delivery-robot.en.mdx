@@ -1,0 +1,25 @@
+This public-data project proposed priority hubs and routes for a **book-delivery
+robot service** in Gwanak-gu, Seoul, where access to library services varies across
+neighborhoods. The analysis treated schools, traditional markets, apartment
+complexes, senior centers, and disability facilities as candidate stops so that
+the proposed network could serve locations with both public demand and practical
+delivery value.
+
+Nine public datasets were cleaned and standardized into comparable geographic
+units. Candidate locations were evaluated using four indicators: the number of
+libraries within one kilometer, local foot traffic, library-use activity, and
+distance to the nearest library. OLS regression was used to estimate the relative
+weights of these indicators, converting heterogeneous source data into a single
+hub-priority score. Locations with a total score of 45 or higher were retained as
+priority candidates.
+
+The selected candidates were grouped geographically, and Folium was used to map
+time-dependent stops and proposed delivery paths. Comparing the candidate
+clusters identified the **Bongcheon–Seoul National University** area as the most
+practical initial service zone based on accessibility and the distribution of
+high-priority stops.
+
+The final output combined data preprocessing, statistical weighting, candidate
+selection, and geospatial visualization in one reproducible workflow. The result
+was framed as a planning study for hub prioritization rather than as an
+autonomous-routing system validated in the field.
