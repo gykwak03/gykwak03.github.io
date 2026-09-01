@@ -1,4 +1,5 @@
 import { contact } from "@/content/site";
+import { publicPath } from "@/lib/paths";
 
 /**
  * Language-aware résumé download. Both anchors render; the bilingual CSS
@@ -10,7 +11,7 @@ export function ResumeButton({ className = "" }: { className?: string }) {
     <>
       <a
         data-lang="en"
-        href={contact.cvEn}
+        href={publicPath(contact.cvEn)}
         download="Gayoung_Kwak_Resume.pdf"
         className={className}
       >
@@ -18,7 +19,7 @@ export function ResumeButton({ className = "" }: { className?: string }) {
       </a>
       <a
         data-lang="ko"
-        href={contact.cvKo}
+        href={publicPath(contact.cvKo)}
         download="이력서_곽가영.pdf"
         className={className}
       >

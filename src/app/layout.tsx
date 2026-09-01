@@ -4,6 +4,8 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { RevealInit } from "@/components/RevealInit";
 
+const pagesBasePath = process.env.PAGES_BASE_PATH ?? "";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gayoungkwak.vercel.app"),
+  metadataBase: new URL(`https://gykwak03.github.io${pagesBasePath}/`),
   title: {
     default: "Gayoung Kwak — Data Science × Healthcare AI",
     template: "%s · Gayoung Kwak",

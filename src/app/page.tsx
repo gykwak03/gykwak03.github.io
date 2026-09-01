@@ -5,6 +5,7 @@ import { ProfileActions } from "@/components/ProfileActions";
 import { education, experience, languages } from "@/content/site";
 import { projects } from "@/content/projects";
 import { research } from "@/content/research";
+import { publicPath } from "@/lib/paths";
 
 const coreSkills = ["Python", "SQL", "R", "C++", "HTML/CSS", "JavaScript", "React", "AWS", "GCP"];
 
@@ -32,7 +33,7 @@ function LogoBadge({
   return (
     <div className={`relative z-10 flex ${sizeClass} shrink-0 items-center justify-center overflow-hidden rounded-full border border-border bg-white shadow-[0_2px_8px_rgba(16,31,90,0.08)]`}>
       <Image
-        src={src}
+        src={publicPath(src)}
         alt={alt}
         width={96}
         height={96}
@@ -61,7 +62,7 @@ export default function Home() {
             <div className="relative shrink-0">
               <div className="absolute inset-0 translate-y-1.5 rounded-full bg-black/10 blur-lg" />
               <Image
-                src="/profile-gayoung-kwak.jpg"
+                src={publicPath("/profile-gayoung-kwak.jpg")}
                 alt="Portrait of Gayoung Kwak"
                 width={116}
                 height={116}

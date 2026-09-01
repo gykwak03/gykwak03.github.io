@@ -1,5 +1,6 @@
 import { contact } from "@/content/site";
 import { LangToggle } from "@/components/LangToggle";
+import { publicPath } from "@/lib/paths";
 
 const actionClass =
   "inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-subtle shadow-[0_1px_3px_rgba(16,31,90,0.06)] transition-colors hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent";
@@ -32,10 +33,10 @@ function LinkedInIcon() {
 export function ProfileActions() {
   return (
     <div className="flex flex-wrap items-center gap-2" aria-label="Profile links">
-      <a data-lang="en" href={contact.cvEn} target="_blank" rel="noreferrer" className={`${actionClass} text-[0.62rem] font-semibold`} aria-label="Résumé" title="Résumé">
+      <a data-lang="en" href={publicPath(contact.cvEn)} target="_blank" rel="noreferrer" className={`${actionClass} text-[0.62rem] font-semibold`} aria-label="Résumé" title="Résumé">
         CV
       </a>
-      <a data-lang="ko" href={contact.cvKo} target="_blank" rel="noreferrer" className={`${actionClass} text-[0.62rem] font-semibold`} aria-label="이력서" title="이력서">
+      <a data-lang="ko" href={publicPath(contact.cvKo)} target="_blank" rel="noreferrer" className={`${actionClass} text-[0.62rem] font-semibold`} aria-label="이력서" title="이력서">
         CV
       </a>
       <a href={`mailto:${contact.email}`} className={actionClass} aria-label="Email" title="Email">

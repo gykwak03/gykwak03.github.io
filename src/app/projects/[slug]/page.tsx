@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { projects, getProject } from "@/content/projects";
 import { WorkDetail } from "@/components/WorkDetail";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }

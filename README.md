@@ -33,8 +33,7 @@ Additional commands:
 
 ```bash
 npm run lint     # Run ESLint
-npm run build    # Create a production build
-npm run start    # Serve the production build
+npm run build    # Create the static production site in out/
 ```
 
 ## Project structure
@@ -102,13 +101,25 @@ to `public/`. The `output/` directory is ignored by Git; the final PDFs in
 
 ## Deployment
 
-The project is ready for Vercel deployment:
+The portfolio is deployed as a static Next.js export on GitHub Pages. The
+repository should be named `gykwak03.github.io` so it is published as a GitHub
+user site without an additional repository path.
 
-1. Push the repository to GitHub.
-2. Import it in Vercel.
-3. Use the default Next.js build settings.
-4. Update `metadataBase` in `src/app/layout.tsx` if the production domain
-   changes.
+1. Rename the GitHub repository from `gayoungkwak` to `gykwak03.github.io`.
+2. In the repository, open **Settings → Pages**.
+3. Set **Build and deployment → Source** to **GitHub Actions**.
+4. Push to `main`. The workflow in `.github/workflows/deploy-pages.yml`
+   builds and publishes the site automatically.
+
+The public URL is:
+
+```text
+https://gykwak03.github.io/
+```
+
+The deployment workflow obtains the repository base path from GitHub Pages,
+so links, images, and résumé PDFs also keep working if the project is deployed
+temporarily from a project Pages path such as `/gayoungkwak/`.
 
 ## Content and contact
 

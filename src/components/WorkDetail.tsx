@@ -5,6 +5,7 @@ import { T } from "@/components/T";
 import { LangToggle } from "@/components/LangToggle";
 import type { DetailMedia } from "@/lib/detail";
 import type { L } from "@/lib/i18n";
+import { publicPath } from "@/lib/paths";
 
 type DetailLink = {
   label: string;
@@ -143,7 +144,7 @@ export function WorkDetail({
             <figure key={item.src}>
               <div className="overflow-hidden rounded-xl bg-white shadow-[0_8px_30px_rgba(16,31,90,0.07)]">
                 <Image
-                  src={item.src}
+                  src={publicPath(item.src)}
                   alt={item.alt.en}
                   width={item.width}
                   height={item.height}

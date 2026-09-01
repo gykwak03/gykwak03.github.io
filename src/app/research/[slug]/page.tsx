@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { research, getResearch } from "@/content/research";
 import { WorkDetail } from "@/components/WorkDetail";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return research.map((r) => ({ slug: r.slug }));
 }
