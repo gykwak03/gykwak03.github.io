@@ -10,7 +10,7 @@ import { publicPath } from "@/lib/paths";
 const coreSkills = ["Python", "SQL", "R", "C++", "HTML/CSS", "JavaScript", "React", "AWS", "GCP"];
 
 const projectMarks = [
-  { src: "/logos/show-me-the-sanggwon-logo.png", alt: "Show Me The Sanggwon", scale: "scale-[0.82]" },
+  { src: "/logos/show-me-the-sanggwon-logo.png", alt: "Seoul Foodservice Site Intelligence", scale: "scale-[0.82]" },
   { src: "/logos/dentiscan-logo.jpg", alt: "DentiScan", scale: "scale-100" },
   { src: "/logos/ss-ti-line.svg", alt: "SS-TI nutrition survey icon", scale: "scale-100" },
   { src: "/logos/food-poisoning-welch-icon.png", alt: "Welch bacterium game character", scale: "scale-100" },
@@ -96,7 +96,7 @@ export default function Home() {
                 I use clinical records, public data, and medical images to build and evaluate <strong className="font-semibold text-foreground">machine-learning systems</strong>. I focus on predictive performance, reproducibility, and the limits of real-world use.
               </p>
               <p>
-                My work connects <strong className="font-semibold text-foreground">nutrition and health knowledge</strong> with <strong className="font-semibold text-foreground">data and software</strong>. Recent projects include <Link href="/research/delirium-llm" className="text-foreground underline decoration-border underline-offset-4 hover:decoration-foreground">LLM-based feature selection</Link> for ICU delirium prediction, an <Link href="/projects/sanggwon" className="text-foreground underline decoration-border underline-offset-4 hover:decoration-foreground">explainable restaurant-site survival model</Link>, and a <Link href="/projects/dentiscan" className="text-foreground underline decoration-border underline-offset-4 hover:decoration-foreground">two-stage dental image screening pipeline</Link>.
+                My work connects <strong className="font-semibold text-foreground">nutrition and health knowledge</strong> with <strong className="font-semibold text-foreground">data and software</strong>. Recent projects include <Link href="/research/delirium-llm" className="text-foreground underline decoration-border underline-offset-4 hover:decoration-foreground">LLM-based feature selection</Link> for ICU delirium prediction, an <Link href="/projects/sanggwon" className="text-foreground underline decoration-border underline-offset-4 hover:decoration-foreground">explainable foodservice-site survival model</Link>, and a <Link href="/projects/dentiscan" className="text-foreground underline decoration-border underline-offset-4 hover:decoration-foreground">two-stage dental image screening pipeline</Link>.
               </p>
             </>
           }
@@ -254,6 +254,7 @@ export default function Home() {
                 <h3 className="mt-2 text-lg font-semibold leading-6 tracking-[-0.02em] text-foreground transition-colors group-hover:text-accent">
                   <Link href={`/projects/${project.slug}`}><T {...project.title} /></Link>
                 </h3>
+                <p className="mt-1 text-xs font-medium text-subtle"><T {...project.subtitle} /></p>
                 <p className="mt-2 text-sm leading-6 text-muted"><T {...project.summary} /></p>
                 <p className="mt-3 text-xs font-medium text-foreground">
                   <T en="Role" ko="역할" /> <span className="text-subtle">·</span> <T {...project.role} />

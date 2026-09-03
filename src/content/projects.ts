@@ -33,9 +33,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "sanggwon",
-    title: { en: "Show Me The Sanggwon", ko: "상권을 부탁해" },
+    title: { en: "Seoul Foodservice Site Intelligence", ko: "상권을 부탁해" },
     subtitle: {
-      en: "AI restaurant-site survival scoring for Seoul",
+      en: "Three-year survival scoring for prospective food-service business locations",
       ko: "서울 요식업 창업 입지 생존율 예측 AI",
     },
     context: {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     },
     badge: { en: "Grand Prize · Mayor of Seoul Award", ko: "대상 · 서울특별시장상" },
     summary: {
-      en: "A restaurant-site survival service that won the Grand Prize in Product & Service Development within the Startup Division of the 2026 Seoul Metropolitan Government Big Data Competition, receiving the Mayor of Seoul Award. The data and ML pipeline combines 16 public datasets, 139 candidate features, leakage-aware temporal validation (AUROC 0.71), probability calibration, and SHAP explanations.",
+      en: "A decision-support service that estimates the three-year survival likelihood of prospective food-service business locations in Seoul. It received the Mayor of Seoul Award after winning the Grand Prize in the competition’s Startup Division. The data and ML pipeline combines 16 public datasets, 139 candidate features, leakage-aware temporal validation (AUROC 0.71), probability calibration, and SHAP explanations.",
       ko: "서울의 요식업 창업 후보지별 3년 생존 가능성을 예측하는 서비스로, 2026 서울시 빅데이터 활용 경진대회 창업부문 제품·서비스 개발 분야에서 대상을 수상해 서울특별시장상을 받았습니다. 데이터·ML 파이프라인은 공공데이터 16종, 후보 변수 139개, 데이터 누수를 차단한 시점 분할 검증(AUROC 0.71), 확률 보정, SHAP 해석으로 구성됩니다.",
     },
     tags: [
@@ -73,7 +73,7 @@ export const projects: Project[] = [
         width: 2160,
         height: 1215,
         alt: {
-          en: "Show Me The Sanggwon service overview and interface",
+          en: "Seoul Foodservice Site Intelligence service overview and interface",
           ko: "상권을 부탁해 서비스 개요와 화면",
         },
         caption: {
@@ -86,7 +86,7 @@ export const projects: Project[] = [
         width: 2160,
         height: 1215,
         alt: {
-          en: "Four-step demonstration of the Show Me The Sanggwon service",
+          en: "Four-step demonstration of the Seoul Foodservice Site Intelligence service",
           ko: "상권을 부탁해 4단계 서비스 시연 화면",
         },
         caption: {
@@ -159,7 +159,7 @@ export const projects: Project[] = [
     slug: "ss-ti",
     title: { en: "SS-TI", ko: "SS-TI" },
     subtitle: {
-      en: "Salt & Sweet Taste Identifier",
+      en: "Sweet & Salty Taste Identifier",
       ko: "단맛·짠맛 취향 분석기",
     },
     context: {
@@ -188,7 +188,7 @@ export const projects: Project[] = [
       ko: "식중독균 생육 조건을 활용한 교육형 전략 게임",
     },
     context: {
-      en: "2023 Kyung Hee University Hackathon — KHUthon",
+      en: "2023 Kyung Hee University Hackathon (KHUthon)",
       ko: "2023 경희대학교 해커톤 KHUthon",
     },
     period: { en: "Sep – Oct 2023", ko: "2023.09 – 2023.10" },
@@ -236,7 +236,7 @@ export const projects: Project[] = [
       ko: "공공도서관 접근성 개선 데이터 분석",
     },
     context: {
-      en: "Seoul Gwanak-gu Youth Data Science Program",
+      en: "Seoul Gwanak District Youth Data Science Program",
       ko: "서울 관악구 청년 Data Science 과정",
     },
     period: { en: "Jul – Aug 2023", ko: "2023.07 – 2023.08" },
@@ -246,7 +246,7 @@ export const projects: Project[] = [
       ko: "고영은 · 신지원 · 권예은",
     },
     summary: {
-      en: "A public-data study that combined nine datasets and OLS regression to identify practical stops and routes for book-delivery robots in Gwanak-gu, Seoul.",
+      en: "A public-data study that combined nine datasets and OLS regression to identify practical stops and routes for book-delivery robots in Gwanak District, Seoul.",
       ko: "공공데이터 9종과 OLS 회귀분석을 활용해 서울 관악구 도서 배달 로봇의 우선 거점과 운행 경로를 제안한 프로젝트입니다.",
     },
     tags: ["Python", "pandas", "statsmodels", "OLS", "geopy", "folium"],

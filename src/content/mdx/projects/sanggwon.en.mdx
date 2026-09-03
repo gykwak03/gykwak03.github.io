@@ -1,13 +1,13 @@
-**Show Me The Sanggwon** is a decision-support service for prospective restaurant
-owners comparing vacant sites in Seoul. Instead of presenting commercial-area
-statistics separately, it connects each listing to an estimated probability of
-remaining open for three years, structured search filters, and an explainable
-location report. The completed service won the Grand Prize in the Product &
-Service Development category within the Startup Division of the 2026 Seoul
-Metropolitan Government Big Data Competition and received the Mayor of Seoul
-Award.
+**Seoul Foodservice Site Intelligence** is a decision-support service for
+prospective food-service entrepreneurs comparing vacant sites in Seoul. Originally
+developed under the Korean product name *상권을 부탁해*, it connects each listing
+to an estimated probability of remaining open for three years, structured search
+filters, and an explainable location report. The completed service won the Grand
+Prize in the Product & Service Development category within the Startup Division
+of the 2026 Seoul Metropolitan Government Big Data Competition and received the
+Mayor of Seoul Award.
 
-The prediction target was defined at the cohort level: a restaurant opening in
+The prediction target was defined at the cohort level: a food-service business opening in
 year Y was labeled according to whether it remained in operation through the end
 of Y+3. Four opening cohorts from 2019 to 2022 were constructed so that every
 feature reflected information available at the relevant opening-year cutoff.
@@ -19,7 +19,7 @@ features, including local demand, competition, accessibility, and site-history
 signals.
 
 The XGBoost pipeline combines numeric imputation with target encoding and was
-evaluated on **61,823 restaurant records**. Chronological validation trained on
+evaluated on **61,823 food-service business records**. Chronological validation trained on
 the 2019–2021 cohorts and tested on the 2022 cohort, producing an AUROC of
 **0.71**. Future events were excluded from occupancy and business-history
 features, and offline feature definitions were aligned with the serving pipeline
