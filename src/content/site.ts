@@ -130,6 +130,9 @@ export const languages: { name: L; level: L }[] = [
   },
   {
     name: { en: "English", ko: "영어" },
-    level: { en: "TOEFL iBT 79 (B2)", ko: "TOEFL iBT 79 (B2)" },
+    level: {
+      en: "IELTS Academic 7.0 (C1) · Oct 31, 2026",
+      ko: "IELTS Academic 7.0 (C1) · 2026.10.31",
+    },
   },
 ];

@@ -224,7 +224,7 @@ EN = {
         ("Methods", "Machine learning, deep learning, statistics, geospatial analysis"),
     ],
     "languages_title": "Languages",
-    "languages": [("Korean", "Native"), ("English", "TOEFL iBT 79 (B2)")],
+    "languages": [("Korean", "Native"), ("English", "IELTS Academic 7.0 (C1) | Oct 31, 2026")],
 }
 
 
@@ -293,7 +293,7 @@ KO = {
         ("방법론", "머신러닝, 딥러닝, 통계 분석, 공간 데이터 분석"),
     ],
     "languages_title": "언어",
-    "languages": [("한국어", "원어민"), ("영어", "TOEFL iBT 79 (B2)")],
+    "languages": [("한국어", "원어민"), ("영어", "IELTS Academic 7.0 (C1) | 2026.10.31")],
 }
 
 
