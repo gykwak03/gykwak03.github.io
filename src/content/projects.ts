@@ -118,8 +118,8 @@ export const projects: Project[] = [
       ko: "최소영 · 유재원 · 권서연",
     },
     summary: {
-      en: "A two-stage dental screening prototype in which RF-DETR locates suspected caries and tooth wear and a Swin Transformer verifies each crop. Copy-Paste augmentation increased caries recall from 0.32 to 0.54, and the final pipeline was deployed on AWS EC2.",
-      ko: "RF-DETR로 충치와 치아 마모 의심 부위를 찾고 Swin Transformer로 각 영역을 검증하는 2단계 치과 스크리닝 프로토타입입니다. Copy-Paste 증강으로 충치 재현율을 0.32에서 0.54로 높였으며, 최종 파이프라인을 AWS EC2에 배포했습니다.",
+      en: "A two-stage dental screening prototype for suspected caries and tooth wear. RF-DETR achieved 81.28% precision in the detector comparison, and a Swin Transformer rechecked candidate regions to filter likely false positives. The pipeline was deployed on AWS EC2.",
+      ko: "충치와 치아 마모 의심 부위를 선별하는 2단계 스크리닝 프로토타입입니다. 탐지 모델 비교에서 RF-DETR의 정밀도는 81.28%였으며, Swin Transformer로 후보 영역을 다시 확인해 정상으로 분류된 영역을 걸러냈습니다. 최종 파이프라인은 AWS EC2에 배포했습니다.",
     },
     tags: [
       "PyTorch",

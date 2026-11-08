@@ -14,12 +14,12 @@ Because abrasion objects outnumbered caries by 1.76 to 1, Copy-Paste augmentatio
 increased the number of caries objects by 25% while preserving the surrounding
 oral-image context.
 
-The final architecture paired RF-DETR with a Swin Transformer. Copy-Paste
-augmentation raised caries recall from **0.3206 to 0.5370 (+67%)**, caries
-mAP@0.5:0.95 from 0.1706 to 0.3219, and overall detector recall from 0.5736 to
-0.6216. Evaluation on a second dataset produced a marked decline in performance,
-indicating sensitivity to image source and acquisition conditions rather than
-consistent cross-domain generalization.
+On the original dataset, RF-DETR achieved **81.28% detection precision** compared
+with **63.78% for D-FINE**. The final pipeline paired RF-DETR with a Swin
+Transformer to screen out likely false positives by removing crops predicted as
+normal. In the comparison with detection alone, this second stage also missed
+more true lesions. Performance declined on a second dataset, showing sensitivity
+to image source and acquisition conditions.
 
 The inference pipeline was integrated into a Streamlit application and deployed
 on AWS EC2. The result screen reports candidate boxes, confidence scores, lesion
