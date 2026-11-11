@@ -12,7 +12,8 @@ of delirium first documented after the initial 24-hour observation window. This
 design separated baseline predictor collection from the incident outcome period
 and reduced the risk of including variables recorded after delirium onset.
 
-GPT-4.1, Claude Sonnet 4.5, and Gemini 2.5 Pro were evaluated with Scoring,
+Four feature-selection procedures were evaluated: Scoring, Ranking, Sequencing,
+and log-prior. GPT-4.1, Claude Sonnet 4.5, and Gemini 2.5 Pro were evaluated with Scoring,
 Ranking, and Sequencing prompts. Each model–procedure combination was repeated
 five times to quantify run-to-run stability; a log-prior procedure was also tested
 with GPT-4.1. Reproducibility was assessed using rank agreement and top-k overlap,
@@ -20,8 +21,7 @@ and selected subsets were benchmarked with stratified five-fold XGBoost models.
 
 The prompting procedure influenced reproducibility more strongly than the choice
 of LLM, with Scoring producing the most stable rankings. The best 30-feature LLM
-subset retained **93.0% of the full-pool AUROC**, although supervised feature
-selectors remained stronger when outcome labels were available. The findings
+subset retained **93.0% of the full-pool AUROC**. The findings
 support LLM-based selection as a complementary prior for narrowing an initial
 clinical feature space, especially before a fully labeled cohort is available.
 The manuscript is currently under submission.

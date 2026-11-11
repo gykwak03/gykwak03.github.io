@@ -160,7 +160,7 @@ def draw_bullet(
 
 EN = {
     "name": "Gayoung Kwak",
-    "tagline": "Healthcare AI / Applied Machine Learning",
+    "tagline": "AI & Data Science for Healthcare",
     "contact": "gykwak03@khu.ac.kr  |  github.com/gykwak03  |  linkedin.com/in/gayoungkwak  |  ganuyaa.tistory.com",
     "summary_title": "Profile",
     "summary": (
@@ -170,12 +170,12 @@ EN = {
     ),
     "experience_title": "Experience",
     "experience_heading": "Research Intern",
-    "experience_meta": "Cardio-Cerebrovascular Center, Severance Hospital, Yonsei University  |  Jul 2024 - Feb 2025",
+    "experience_meta": "Cardio-Cerebrovascular Center, Severance Hospital, Yonsei University  |  Jul 2024 - Jul 2025",
     "experience_bullets": [
         "Led an end-to-end study of LLM-based clinical feature selection for ICU delirium prediction.",
         "Built a leakage-aware cohort of 32,574 first ICU stays, including 2,728 incident delirium cases, and operationalized 107 features from 11 studies as 151 MIMIC-IV variables.",
-        "Compared Scoring, Ranking, Sequencing, and log-prior procedures across GPT-4.1, Claude Sonnet 4.5, and Gemini 2.5 Pro, with five independent runs per setting.",
-        "The best 30-feature LLM subset retained 93.0% of full-pool AUROC; supervised selectors remained stronger when outcome labels were available.",
+        "Compared four procedures: Scoring, Ranking, Sequencing, and log-prior across GPT-4.1, Claude Sonnet 4.5, and Gemini 2.5 Pro, with five independent runs per setting.",
+        "The best 30-feature LLM subset retained 93.0% of full-pool AUROC.",
     ],
     "research_title": "Research",
     "research_heading": "LLM-Based Identification of Critical Features for Delirium Prediction",
@@ -191,7 +191,7 @@ EN = {
         (
             "DentiScan",
             "Data Analysis Capstone Design  |  2026",
-            "Two-stage RF-DETR and Swin Transformer screening pipeline. Copy-Paste augmentation raised caries recall from 0.32 to 0.54; contributed to model experiments, backend integration, and AWS deployment.",
+            "Two-stage RF-DETR and Swin Transformer screening pipeline focused on precision. RF-DETR achieved 81.28% precision versus 63.78% for D-FINE; contributed to model experiments, backend integration, and AWS deployment.",
         ),
         (
             "SS-TI",
@@ -212,16 +212,16 @@ EN = {
     "education_title": "Education",
     "education": [
         ("B.S. Food Science and Nutrition", "Kyung Hee University, Seoul Campus  |  2022 - Present"),
-        ("B.S. Software Convergence", "Kyung Hee University, Global Campus  |  2024 - Present"),
+        ("B.S. Software Convergence (Data Science Track)", "Kyung Hee University, Global Campus  |  2024 - Present"),
         ("Exchange - Data Science and Engineering", "Instituto Superior Tecnico, University of Lisbon  |  Sep 2025 - Jan 2026"),
     ],
     "coursework": "Coursework: Deep Learning, Natural Language, Information Systems and Databases, Parallel and Heterogeneous Computing Systems",
     "skills_title": "Skills",
     "skills": [
-        ("Programming", "Python, SQL, R, C++"),
+        ("Programming", "Python, SQL, R, C++, JavaScript"),
         ("Web", "HTML/CSS, JavaScript, React"),
-        ("Cloud", "AWS, GCP"),
-        ("Methods", "Machine learning, deep learning, statistics, geospatial analysis"),
+        ("Cloud", "AWS, GCP, Git"),
+        ("ML / Data", "PyTorch, scikit-learn, Hugging Face, LangChain, NumPy, pandas"),
     ],
     "languages_title": "Languages",
     "languages": [("Korean", "Native"), ("English", "IELTS Academic 7.0 (C1) | Oct 31, 2026")],
@@ -230,7 +230,7 @@ EN = {
 
 KO = {
     "name": "곽가영",
-    "tagline": "헬스케어 AI / 응용 머신러닝",
+    "tagline": "헬스케어 AI / 데이터사이언스",
     "contact": "gykwak03@khu.ac.kr  |  github.com/gykwak03  |  linkedin.com/in/gayoungkwak  |  ganuyaa.tistory.com",
     "summary_title": "소개",
     "summary": (
@@ -239,12 +239,12 @@ KO = {
     ),
     "experience_title": "경력",
     "experience_heading": "연구인턴",
-    "experience_meta": "연세대학교 세브란스병원 뇌심혈관질환센터  |  2024.07 - 2025.02",
+    "experience_meta": "연세대학교 세브란스병원 뇌심혈관질환센터  |  2024.07 - 2025.07",
     "experience_bullets": [
         "중환자실 섬망 예측을 위한 LLM 기반 임상 변수 선택 연구를 주도했습니다.",
         "첫 중환자실 입원 32,574건과 입실 24시간 이후 발생한 섬망 2,728건의 코호트를 구축하고, 연구 11편의 임상 특성 107개를 MIMIC-IV 변수 151개로 구현했습니다.",
-        "GPT-4.1, Claude Sonnet 4.5, Gemini 2.5 Pro에서 Scoring, Ranking, Sequencing, log-prior 방식을 조건별 5회씩 비교했습니다.",
-        "가장 우수한 LLM 변수 30개 조합은 전체 변수 모델 AUROC의 93.0%를 유지했으며, 라벨이 있을 때는 지도학습 선택법이 더 우수했습니다.",
+        "GPT-4.1, Claude Sonnet 4.5, Gemini 2.5 Pro에서 Scoring, Ranking, Sequencing, log-prior의 네 가지 방식을 조건별 5회씩 비교했습니다.",
+        "가장 우수한 LLM 변수 30개 조합은 전체 변수 모델 AUROC의 93.0%를 유지했습니다.",
     ],
     "research_title": "연구",
     "research_heading": "LLM 기반 섬망 예측 핵심 변수 식별",
@@ -260,7 +260,7 @@ KO = {
         (
             "DentiScan",
             "데이터분석 캡스톤디자인  |  2026",
-            "RF-DETR과 Swin Transformer 기반 2단계 스크리닝 파이프라인입니다. Copy-Paste 증강으로 충치 재현율을 0.32에서 0.54로 높였으며, 모델 실험과 백엔드 통합, AWS 배포에 참여했습니다.",
+            "정밀도 향상에 초점을 맞춘 RF-DETR과 Swin Transformer 기반 2단계 스크리닝 파이프라인입니다. RF-DETR 정밀도는 81.28%로 D-FINE의 63.78%보다 높았으며, 모델 실험과 백엔드 통합, AWS 배포에 참여했습니다.",
         ),
         (
             "SS-TI",
@@ -281,16 +281,16 @@ KO = {
     "education_title": "학력",
     "education": [
         ("식품영양학 학사", "경희대학교 서울캠퍼스  |  2022 - 현재"),
-        ("소프트웨어융합학 학사", "경희대학교 국제캠퍼스  |  2024 - 현재"),
+        ("소프트웨어융합학 학사 (데이터사이언스 트랙)", "경희대학교 국제캠퍼스  |  2024 - 현재"),
         ("교환학생 - Data Science and Engineering", "리스본대학교 Instituto Superior Tecnico  |  2025.09 - 2026.01"),
     ],
     "coursework": "수강: Deep Learning, Natural Language, Information Systems and Databases, Parallel and Heterogeneous Computing Systems",
     "skills_title": "기술",
     "skills": [
-        ("프로그래밍", "Python, SQL, R, C++"),
+        ("프로그래밍", "Python, SQL, R, C++, JavaScript"),
         ("웹", "HTML/CSS, JavaScript, React"),
-        ("클라우드", "AWS, GCP"),
-        ("방법론", "머신러닝, 딥러닝, 통계 분석, 공간 데이터 분석"),
+        ("클라우드", "AWS, GCP, Git"),
+        ("ML / 데이터", "PyTorch, scikit-learn, Hugging Face, LangChain, NumPy, pandas"),
     ],
     "languages_title": "언어",
     "languages": [("한국어", "원어민"), ("영어", "IELTS Academic 7.0 (C1) | 2026.10.31")],

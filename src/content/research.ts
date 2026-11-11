@@ -28,7 +28,7 @@ export const research: ResearchItem[] = [
       ko: "세브란스병원 심뇌혈관센터",
     },
     status: { en: "Manuscript under submission", ko: "논문 투고 중" },
-    period: { en: "Jul 2024 – Feb 2025", ko: "2024.07 – 2025.02" },
+    period: { en: "Jul 2024 – Jul 2025", ko: "2024.07 – 2025.07" },
     role: { en: "First Author & Lead Researcher", ko: "제1저자 · 주도 연구자" },
     collaborators: {
       en: "Rim Yu · Eun-Jung Park (Corresponding Author)",

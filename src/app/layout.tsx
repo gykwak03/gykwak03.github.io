@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
   title: {
-    default: "Gayoung Kwak (곽가영) — Data Science × Healthcare AI",
+    default: "Gayoung Kwak (곽가영) — AI & Data Science for Healthcare",
     template: "%s · Gayoung Kwak",
   },
   description:
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Gayoung Kwak (곽가영) — Data Science × Healthcare AI",
+    title: "Gayoung Kwak (곽가영) — AI & Data Science for Healthcare",
     description:
       "Data science and AI across healthcare data, machine learning, deep learning, and computer vision.",
     url: siteUrl,
