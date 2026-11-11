@@ -66,6 +66,10 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "Live Demo", href: "https://showmethesanggwon.com" },
+      {
+        label: "Official Award Record",
+        href: "https://data.seoul.go.kr/together/cpthb/cpthbHistView.do?bbsCd=10020&seq=01bcebc28beb6b7259036aec2872ad44&usrId=undefined&ditcCd=2026&ver=1&page=gallery",
+      },
     ],
     media: [
       {
