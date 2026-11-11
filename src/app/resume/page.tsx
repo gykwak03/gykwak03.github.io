@@ -43,7 +43,7 @@ export default function ResumePage() {
             <T en="Gayoung Kwak" ko="곽가영" />
           </h1>
           <p className="mt-2 text-muted">
-            <T en="Healthcare AI · Applied Machine Learning" ko="헬스케어 AI · 응용 머신러닝" />
+            <T en="AI & Data Science for Healthcare" ko="헬스케어를 위한 AI·데이터 사이언스" />
           </p>
           <p className="mt-1 text-sm text-subtle">
             <a href={`mailto:${contact.email}`} className="hover:text-accent">

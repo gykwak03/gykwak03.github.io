@@ -76,7 +76,7 @@ export default function Home() {
                 Gayoung Kwak
               </h1>
               <p className="mt-2 text-sm text-muted sm:whitespace-nowrap sm:text-base">
-                <T en="Healthcare AI · Applied Machine Learning" ko="헬스케어 AI · 응용 머신러닝" />
+                <T en="AI & Data Science for Healthcare" ko="헬스케어를 위한 AI·데이터 사이언스" />
               </p>
             </div>
           </div>
@@ -132,8 +132,8 @@ export default function Home() {
                 </div>
                 <p className="mt-3 text-sm leading-6 text-muted">
                   <T
-                    en="Led a study evaluating LLM-based clinical feature selection for ICU delirium prediction. Built a 32,574-patient MIMIC-IV cohort and assessed selection reproducibility and downstream predictive performance."
-                    ko="중환자실 섬망 예측을 위한 LLM 기반 임상 변수 선택 연구를 주도했습니다. MIMIC-IV 환자 32,574명의 코호트를 구축하고 변수 선택의 재현성과 예측 성능을 평가했습니다."
+                    en="Led an LLM-based feature selection study for ICU delirium prediction as first author. Built a 32,574-patient MIMIC-IV cohort, assessed selection reproducibility, and benchmarked predictive performance against supervised feature-selection methods."
+                    ko="제1저자로서 중환자실 섬망 예측을 위한 LLM 기반 변수 선택 연구를 주도했습니다. MIMIC-IV 환자 32,574명의 코호트를 구축하고 변수 선택의 재현성을 평가했으며, 지도학습 기반 변수 선택법과 예측 성능을 비교했습니다."
                   />
                 </p>
               </div>
