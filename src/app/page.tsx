@@ -132,8 +132,8 @@ export default function Home() {
                 </div>
                 <p className="mt-3 text-sm leading-6 text-muted">
                   <T
-                    en="Led an LLM-based feature selection study for ICU delirium prediction as first author. Built a 32,574-patient MIMIC-IV cohort, assessed selection reproducibility, and benchmarked predictive performance against supervised feature-selection methods."
-                    ko="제1저자로서 중환자실 섬망 예측을 위한 LLM 기반 변수 선택 연구를 주도했습니다. MIMIC-IV 환자 32,574명의 코호트를 구축하고 변수 선택의 재현성을 평가했으며, 지도학습 기반 변수 선택법과 예측 성능을 비교했습니다."
+                    en="As first author, led a study comparing four LLM-based feature-selection methods for ICU delirium prediction. Built a 32,574-patient MIMIC-IV cohort and compared selection reproducibility and downstream predictive performance."
+                    ko="제1저자로서 중환자실 섬망 예측을 위한 네 가지 LLM 기반 변수 선택 방법을 평가하는 연구를 주도했습니다. MIMIC-IV 환자 32,574명의 코호트를 구축하고 변수 선택의 재현성과 예측 성능을 비교했습니다."
                   />
                 </p>
               </div>
