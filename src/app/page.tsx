@@ -132,7 +132,7 @@ export default function Home() {
                 </div>
                 <p className="mt-3 text-sm leading-6 text-muted">
                   <T
-                    en="As first author, led a study comparing four LLM-based feature-selection methods for ICU delirium prediction. Built a 32,574-patient MIMIC-IV cohort and compared selection reproducibility and downstream predictive performance."
+                    en="As first author, led a study comparing four LLM-based feature-selection methods for ICU delirium prediction. Constructed a retrospective MIMIC-IV cohort of 32,574 first ICU stays and compared selection reproducibility and downstream predictive performance."
                     ko="제1저자로서 중환자실 섬망 예측을 위한 네 가지 LLM 기반 변수 선택 방법을 평가하는 연구를 주도했습니다. MIMIC-IV 환자 32,574명의 코호트를 구축하고 변수 선택의 재현성과 예측 성능을 비교했습니다."
                   />
                 </p>
@@ -226,6 +226,7 @@ export default function Home() {
                 <Link href={`/research/${study.slug}`}><T {...study.title} /></Link>
               </h3>
               <p className="mt-2 text-sm leading-6 text-muted"><T {...study.summary} /></p>
+              <p className="mt-2 text-xs font-medium text-subtle"><T {...study.status} /></p>
               <p className="mt-3 text-xs font-medium text-foreground">
                 <T en="Role" ko="역할" /> <span className="text-subtle">·</span> <T {...study.role} />
               </p>

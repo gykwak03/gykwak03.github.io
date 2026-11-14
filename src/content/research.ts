@@ -20,14 +20,17 @@ export const research: ResearchItem[] = [
   {
     slug: "delirium-llm",
     title: {
-      en: "LLM-Based Identification of Critical Features for Delirium Prediction",
-      ko: "LLM 기반 섬망 예측 핵심 변수 식별",
+      en: "LLM-Based Feature Prioritisation for ICU Delirium Prediction: Reproducibility and Predictive Utility",
+      ko: "LLM-Based Feature Prioritisation for ICU Delirium Prediction: Reproducibility and Predictive Utility",
     },
     venue: {
       en: "Integrative Research Center for Cerebrovascular and Cardiovascular Diseases, Yonsei University College of Medicine",
       ko: "연세대학교 의과대학 뇌심혈관질환연구센터",
     },
-    status: { en: "Manuscript under submission", ko: "논문 투고 중" },
+    status: {
+      en: "Under Review · Smart Health · Journal Impact Factor 3.4",
+      ko: "심사 중 · Smart Health · Journal Impact Factor 3.4",
+    },
     period: { en: "Jul 2024 – Jul 2025", ko: "2024.07 – 2025.07" },
     role: { en: "First Author & Lead Researcher", ko: "제1저자 · 주도 연구자" },
     collaborators: {

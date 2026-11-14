@@ -63,20 +63,38 @@ export const experience: ExperienceItem[] = [
     location: { en: "Seoul", ko: "서울" },
     bullets: {
       en: [
-        "Led “LLM-Based Identification of Critical Features for Delirium Prediction” (manuscript under submission), evaluating whether LLMs can prioritize clinical variables without access to patient outcomes.",
+        "Led “LLM-Based Feature Prioritisation for ICU Delirium Prediction: Reproducibility and Predictive Utility” as first author. The manuscript is under review at Smart Health (Journal Impact Factor 3.4). Evaluated whether LLMs can prioritize clinical variables without patient outcome labels.",
         "Consolidated 107 clinical features from 11 delirium-prediction studies and operationalized them as 151 analysis columns in MIMIC-IV.",
         "Compared four feature-selection procedures: Scoring, Ranking, Sequencing, and log-prior across GPT-4.1, Claude Sonnet 4.5, and Gemini 2.5 Pro, with five independent runs per setting.",
         "Analyzed 32,574 first ICU stays and quantified stability with Kendall’s τ-b, top-k overlap, and downstream predictive performance.",
-        "Showed that 30 selected features recovered 93.0% of the full-pool XGBoost AUROC.",
+        "The best 30-feature LLM subset retained 93.0% of the full-feature XGBoost AUROC, supporting the potential of LLMs as assistive tools for feature prioritisation in clinical prediction research.",
       ],
       ko: [
-        "「LLM-Based Identification of Critical Features for Delirium Prediction」(투고 중) 연구를 주도하며, 환자 결과값 없이도 LLM이 중요한 임상 변수의 우선순위를 제안할 수 있는지 평가했습니다.",
+        "제1저자로 「LLM-Based Feature Prioritisation for ICU Delirium Prediction: Reproducibility and Predictive Utility」 연구를 주도했습니다. Smart Health에서 심사 중이며 Journal Impact Factor는 3.4입니다. 환자 결과값 없이 LLM이 임상 변수의 우선순위를 제안할 수 있는지 평가했습니다.",
         "섬망 예측 연구 11편에서 임상 특성 107개를 정리하고, MIMIC-IV에서 분석 가능한 변수 151개로 변환했습니다.",
         "GPT-4.1·Claude Sonnet 4.5·Gemini 2.5 Pro에서 Scoring·Ranking·Sequencing·log-prior의 네 가지 변수 선택 절차를 조건별 5회씩 비교했습니다.",
         "첫 중환자실 입원 환자 32,574명을 분석하고 Kendall’s τ-b, 상위 변수의 일치도, 예측 성능을 기준으로 결과의 안정성을 측정했습니다.",
-        "LLM이 고른 변수 30개로 전체 변수 모델 AUROC의 93.0%를 확보했습니다.",
+        "가장 우수한 LLM 변수 30개 조합은 전체 변수 XGBoost 모델 AUROC의 93.0%를 유지해, 임상 예측 연구에서 LLM을 변수 우선순위 선정 보조 도구로 활용할 가능성을 뒷받침했습니다.",
       ],
     },
+  },
+];
+
+export const honors = [
+  {
+    award: {
+      en: "Grand Prize · Mayor of Seoul Award",
+      ko: "대상 · 서울특별시장상",
+    },
+    competition: {
+      en: "2026 Seoul Metropolitan Government Big Data Competition · Startup Division, Product & Service Development",
+      ko: "2026 서울시 빅데이터 활용 경진대회 · 창업부문 제품·서비스 개발 분야",
+    },
+    description: {
+      en: "Awarded for Seoul Foodservice Site Intelligence, a service predicting three-year survival for prospective foodservice business locations in Seoul. Role: Data & ML Lead.",
+      ko: "서울 요식업 창업 입지의 3년 생존 가능성을 예측하는 서비스 ‘상권을 부탁해’로 수상했습니다. 데이터·ML 개발을 총괄했습니다.",
+    },
+    href: "https://data.seoul.go.kr/together/cpthb/cpthbHistView.do?bbsCd=10020&seq=01bcebc28beb6b7259036aec2872ad44&usrId=undefined&ditcCd=2026&ver=1&page=gallery",
   },
 ];
 

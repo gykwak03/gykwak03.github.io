@@ -173,21 +173,16 @@ EN = {
     "experience_meta": "Integrative Research Center for Cerebrovascular and Cardiovascular Diseases, Yonsei University College of Medicine  |  Jul 2024 - Jul 2025",
     "experience_bullets": [
         "Led an end-to-end study of LLM-based clinical feature selection for ICU delirium prediction.",
-        "Built a leakage-aware cohort of 32,574 first ICU stays, including 2,728 incident delirium cases, and operationalized 107 features from 11 studies as 151 MIMIC-IV variables.",
+        "Constructed a retrospective MIMIC-IV cohort of 32,574 first ICU stays, including 2,728 incident delirium cases, and mapped 107 features from 11 studies to 151 analysis variables.",
         "Compared four procedures: Scoring, Ranking, Sequencing, and log-prior across GPT-4.1, Claude Sonnet 4.5, and Gemini 2.5 Pro, with five independent runs per setting.",
-        "The best 30-feature LLM subset retained 93.0% of full-pool AUROC.",
+        "The best 30-feature LLM subset retained 93.0% of the full-feature XGBoost AUROC, supporting the potential of LLMs as assistive tools for feature prioritisation in clinical prediction research.",
     ],
     "research_title": "Research",
-    "research_heading": "LLM-Based Identification of Critical Features for Delirium Prediction",
-    "research_meta": "Lead researcher  |  Manuscript under submission",
+    "research_heading": "LLM-Based Feature Prioritisation for ICU Delirium Prediction: Reproducibility and Predictive Utility",
+    "research_meta": "First author  |  Under Review at Smart Health (Journal Impact Factor 3.4)",
     "research_desc": "Evaluated LLMs as literature-informed priors for clinical feature selection using MIMIC-IV and downstream XGBoost benchmarking.",
     "work_title": "Selected Work",
     "work": [
-        (
-            "Show Me The Sanggwon",
-            "2026 Seoul Metropolitan Government Big Data Competition - Grand Prize",
-            "Product & Service Development, Startup Division; Mayor of Seoul Award. Led an XGBoost restaurant-site survival model using 139 features from 16 public datasets; temporal AUC 0.71, leakage controls, and SHAP explanations.",
-        ),
         (
             "DentiScan",
             "Data Analysis Capstone Design  |  2026",
@@ -225,6 +220,10 @@ EN = {
     ],
     "languages_title": "Languages",
     "languages": [("Korean", "Native"), ("English", "IELTS Academic 7.0 (C1) | Oct 31, 2026")],
+    "honors_title": "Honors",
+    "honors_heading": "Grand Prize and Mayor of Seoul Award",
+    "honors_meta": "2026 Seoul Metropolitan Government Big Data Competition | Startup Division, Product & Service Development",
+    "honors_desc": "Awarded for Seoul Foodservice Site Intelligence, a service predicting three-year survival for prospective foodservice business locations in Seoul. Role: Data & ML Lead.",
 }
 
 
@@ -244,19 +243,14 @@ KO = {
         "중환자실 섬망 예측을 위한 LLM 기반 임상 변수 선택 연구를 주도했습니다.",
         "첫 중환자실 입원 32,574건과 입실 24시간 이후 발생한 섬망 2,728건의 코호트를 구축하고, 연구 11편의 임상 특성 107개를 MIMIC-IV 변수 151개로 구현했습니다.",
         "GPT-4.1, Claude Sonnet 4.5, Gemini 2.5 Pro에서 Scoring, Ranking, Sequencing, log-prior의 네 가지 방식을 조건별 5회씩 비교했습니다.",
-        "가장 우수한 LLM 변수 30개 조합은 전체 변수 모델 AUROC의 93.0%를 유지했습니다.",
+        "가장 우수한 LLM 변수 30개 조합은 전체 변수 XGBoost 모델 AUROC의 93.0%를 유지해, 임상 예측 연구에서 LLM을 변수 우선순위 선정 보조 도구로 활용할 가능성을 뒷받침했습니다.",
     ],
     "research_title": "연구",
-    "research_heading": "LLM 기반 섬망 예측 핵심 변수 식별",
-    "research_meta": "주도 연구자  |  논문 투고 중",
+    "research_heading": "LLM-Based Feature Prioritisation for ICU Delirium Prediction: Reproducibility and Predictive Utility",
+    "research_meta": "제1저자  |  Smart Health 심사 중 (Journal Impact Factor 3.4)",
     "research_desc": "문헌 지식을 활용한 LLM 변수 선택의 재현성과 MIMIC-IV 기반 XGBoost 예측 성능을 평가했습니다.",
     "work_title": "주요 작업",
     "work": [
-        (
-            "상권을 부탁해",
-            "2026 서울시 빅데이터 활용 경진대회 - 창업부문 제품·서비스 개발 대상",
-            "서울특별시장상 수상. 공공데이터 16종으로 변수 139개를 설계한 요식업 입지 생존 예측 모델을 주도했습니다. 시점 분할 AUC 0.71, 데이터 누수 방지, SHAP 해석을 적용했습니다.",
-        ),
         (
             "DentiScan",
             "데이터분석 캡스톤디자인  |  2026",
@@ -294,6 +288,10 @@ KO = {
     ],
     "languages_title": "언어",
     "languages": [("한국어", "원어민"), ("영어", "IELTS Academic 7.0 (C1) | 2026.10.31")],
+    "honors_title": "수상",
+    "honors_heading": "대상 및 서울특별시장상",
+    "honors_meta": "2026 서울시 빅데이터 활용 경진대회 | 창업부문 제품·서비스 개발 분야",
+    "honors_desc": "서울 요식업 창업 입지의 3년 생존 가능성을 예측하는 서비스 ‘상권을 부탁해’로 수상했습니다. 데이터·ML 개발을 총괄했습니다.",
 }
 
 
@@ -368,6 +366,12 @@ def build_resume(data: dict, lang: str, output_path: Path) -> None:
         right_y = draw_entry(c, title, meta, "", right_x, right_y, right_w, styles, 8)
     right_y = draw_paragraph(c, escape(data["coursework"]), right_x, right_y, right_w, styles["small"], 9)
 
+    right_y = draw_section(c, data["honors_title"], right_x, right_y - 6, right_w, lang)
+    right_y = draw_entry(
+        c, data["honors_heading"], data["honors_meta"], data["honors_desc"],
+        right_x, right_y, right_w, styles, 9,
+    )
+
     details_y = min(left_y, right_y) - 8
     skills_y = draw_section(c, data["skills_title"], MARGIN, details_y, PAGE_W - 2 * MARGIN, lang)
     details_gap = 20
@@ -424,7 +428,7 @@ def build_resume(data: dict, lang: str, output_path: Path) -> None:
     work_right_x = MARGIN + work_col_w + work_gap
     work_left_y = work_y
     work_right_y = work_y
-    work_entry_gap = 14 if lang == "en" else 30
+    work_entry_gap = 14
 
     for title, meta, description in data["work"][:2]:
         work_left_y = draw_entry(

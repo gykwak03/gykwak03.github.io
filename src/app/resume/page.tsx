@@ -5,6 +5,7 @@ import {
   experience,
   skills,
   languages,
+  honors,
 } from "@/content/site";
 import { research } from "@/content/research";
 import { projects } from "@/content/projects";
@@ -103,7 +104,7 @@ export default function ResumePage() {
       {/* Projects */}
       <Block title={{ en: "Projects", ko: "프로젝트" }}>
         <div className="space-y-4">
-          {projects.map((p) => (
+          {projects.filter((p) => p.slug !== "sanggwon").map((p) => (
             <div key={p.slug}>
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="font-medium">
@@ -119,6 +120,20 @@ export default function ResumePage() {
             </div>
           ))}
         </div>
+      </Block>
+
+      {/* Honors */}
+      <Block title={{ en: "Honors", ko: "수상" }}>
+        {honors.map((honor) => (
+          <div key={honor.href}>
+            <h3 className="font-medium"><T {...honor.award} /></h3>
+            <p className="mt-1 text-sm text-subtle"><T {...honor.competition} /></p>
+            <p className="mt-2 text-sm text-muted"><T {...honor.description} /></p>
+            <a href={honor.href} target="_blank" rel="noreferrer" className="mt-2 inline-block text-sm underline underline-offset-4">
+              <T en="Official award record" ko="공식 수상 기록" />
+            </a>
+          </div>
+        ))}
       </Block>
 
       {/* Education */}
