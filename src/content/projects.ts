@@ -122,8 +122,8 @@ export const projects: Project[] = [
       ko: "최소영 · 유재원 · 권서연",
     },
     summary: {
-      en: "A two-stage dental screening prototype for suspected caries and tooth wear. RF-DETR achieved 81.28% precision in the detector comparison, and a Swin Transformer rechecked candidate regions to filter likely false positives. The pipeline was deployed on AWS EC2.",
-      ko: "충치와 치아 마모 의심 부위를 선별하는 2단계 스크리닝 프로토타입입니다. 탐지 모델 비교에서 RF-DETR의 정밀도는 81.28%였으며, Swin Transformer로 후보 영역을 다시 확인해 정상으로 분류된 영역을 걸러냈습니다. 최종 파이프라인은 AWS EC2에 배포했습니다.",
+      en: "A two-stage RF-DETR and Swin Transformer pipeline that filters false-positive dental lesion candidates. Overall precision increased from 67.41% to 80.63%, while recall decreased from 73.25% to 62.74%. The AWS-deployed app displays lesion-level and mean confidence scores.",
+      ko: "RF-DETR의 병변 후보를 Swin Transformer로 재검증해 오탐을 걸러내는 2단계 파이프라인입니다. 전체 정밀도는 67.41%에서 80.63%로 높아졌고, 재현율은 73.25%에서 62.74%로 낮아졌습니다. AWS에 배포한 서비스에서 부위별·평균 신뢰도 점수를 제시합니다.",
     },
     tags: [
       "PyTorch",
@@ -151,8 +151,8 @@ export const projects: Project[] = [
           ko: "치아 병변 탐지 결과를 표시한 DentiScan 화면",
         },
         caption: {
-          en: "Prototype output showing candidate regions, confidence scores, and lesion counts.",
-          ko: "후보 병변 영역, 신뢰도, 병변 수를 함께 보여주는 시연 결과.",
+          en: "Prototype output showing lesion candidates, per-region and mean confidence scores, and lesion counts.",
+          ko: "후보 병변 영역과 부위별·평균 신뢰도 점수, 병변 수를 함께 보여주는 시연 결과.",
         },
         trimTop: 2,
       },
@@ -173,8 +173,8 @@ export const projects: Project[] = [
     period: { en: "Mar – Jul 2024", ko: "2024.03 – 2024.07" },
     role: { en: "Sole Developer", ko: "단독 개발" },
     summary: {
-      en: "A browser-based assessment built from 40 literature-derived items on sugar and sodium intake and eating behavior. KMO and Cronbach’s α were used to evaluate the questionnaire before classifying taste-preference patterns and returning a personalized eating guide.",
-      ko: "당류·나트륨 섭취 빈도와 식행동을 측정하는 선행 연구 기반 40문항으로 만든 웹 설문입니다. KMO와 Cronbach’s α로 설문을 점검한 뒤 단맛·짠맛 선호 유형을 분류하고 개인별 식생활 가이드를 제공합니다.",
+      en: "A 40-item web assessment of sugar and sodium intake and eating behavior, evaluated with KMO and Cronbach’s α. Personalized feedback helps users understand their eating habits and identify practical dietary improvements.",
+      ko: "당류·나트륨 섭취와 식행동을 측정하는 40문항 웹 설문으로, KMO와 Cronbach’s α로 문항을 평가했습니다. 개인별 피드백과 식생활 가이드를 통해 사용자가 자신의 식습관을 이해하고 실천 가능한 개선 방법을 찾도록 돕습니다.",
     },
     tags: ["JavaScript", "Statistics", "KMO", "Cronbach’s α", "Nutrition", "Python", "HTML/CSS"],
     links: [

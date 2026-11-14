@@ -1,27 +1,25 @@
 **DentiScan** is a two-stage screening prototype for suspected caries and tooth
-wear in a single oral photograph. A detector first localizes small candidate
-regions, and a second classifier reviews each crop to remove regions predicted
-as normal. This detect-then-verify design was selected to address uneven lighting,
-small lesion boundaries, and normal tooth textures that can resemble disease in
-consumer-quality images.
+wear in oral photographs. Initial RF-DETR experiments showed weaker detection
+of caries than abrasion, motivating augmentation and threshold experiments.
 
-The project used AlphaDent, approximately 1,200 high-resolution photographs from
-295 patients. Pixel-level masks were converted into detection labels, and 14,497
-cropped images were prepared for four-way classification. Model development
-included ablation studies and comparisons between RF-DETR and D-FINE for
-detection and between Swin Transformer and RegNet for crop classification.
-Because abrasion objects outnumbered caries by 1.76 to 1, Copy-Paste augmentation
-increased the number of caries objects by 25% while preserving the surrounding
-oral-image context.
+Copy-Paste augmentation increased **caries precision from 56.56% to 60.44%** and
+**caries recall from 39.56% to 43.17%**. Combining Copy-Paste with Gamma Correction
+and setting the detection confidence threshold to **0.35** raised caries recall
+to **48.89%**, a gain of **9.33 percentage points** from baseline. Caries precision
+decreased to **50.16%**. The combined configuration was selected to detect more
+caries candidates, with subsequent classification intended to filter the
+additional false positives.
 
-On the original dataset, RF-DETR achieved **81.28% detection precision** compared
-with **63.78% for D-FINE**. The final pipeline paired RF-DETR with a Swin
-Transformer to screen out likely false positives by removing crops predicted as
-normal. In the comparison with detection alone, this second stage also missed
-more true lesions. Performance declined on a second dataset, showing sensitivity
-to image source and acquisition conditions.
+The pipeline first detects lesion candidates broadly, then removes crops
+classified as normal. Detection bounding boxes were compared with ground truth
+using IoU to construct the classification dataset. RegNet and Swin Transformer
+were compared, and **Swin Transformer** was selected for the second stage.
 
-The inference pipeline was integrated into a Streamlit application and deployed
-on AWS EC2. The result screen reports candidate boxes, confidence scores, lesion
-counts, and cropped regions, while explicitly presenting the output as screening
-support that requires professional dental assessment rather than as a diagnosis.
+In the final pipeline evaluation, adding Swin Transformer to RF-DETR increased
+**overall precision from 67.41% to 80.63%**, while **overall recall decreased from
+73.25% to 62.74%**. This comparison showed that the second stage filtered false
+positives while also missing some additional true lesions.
+
+The Streamlit application was deployed on AWS EC2. It displays **confidence
+scores for each detected region and their mean**, alongside lesion locations
+and counts, so users can inspect the model's confidence in its screening output.

@@ -186,12 +186,12 @@ EN = {
         (
             "DentiScan",
             "Data Analysis Capstone Design  |  2026",
-            "Two-stage RF-DETR and Swin Transformer screening pipeline focused on precision. RF-DETR achieved 81.28% precision versus 63.78% for D-FINE; contributed to model experiments, backend integration, and AWS deployment.",
+            "Built an RF-DETR + Swin Transformer pipeline to filter false positives. Overall precision increased from 67.41% to 80.63%, while recall decreased from 73.25% to 62.74%. Deployed on AWS with lesion-level and mean confidence scores.",
         ),
         (
             "SS-TI",
             "Food and Nutrition Capstone Design  |  2024",
-            "Built a web assessment from 40 literature-derived sugar and sodium items, evaluated with KMO and Cronbach's alpha, with personalized dietary guidance.",
+            "Built a 40-item sugar-and-sodium web assessment, evaluated with KMO and Cronbach's alpha. Personalized feedback helps users understand their eating habits and identify practical dietary improvements.",
         ),
         (
             "Book-Delivery Robot Hubs",
@@ -213,10 +213,13 @@ EN = {
     "coursework": "Coursework: Deep Learning, Natural Language, Information Systems and Databases, Parallel and Heterogeneous Computing Systems",
     "skills_title": "Skills",
     "skills": [
-        ("Programming", "Python, SQL, R, C++, JavaScript"),
-        ("Web", "HTML/CSS, JavaScript, React"),
-        ("Cloud", "AWS, GCP, Git"),
-        ("ML / Data", "PyTorch, scikit-learn, Hugging Face, LangChain, NumPy, pandas"),
+        ("Languages", "Python, SQL, R, C++, JavaScript"),
+        ("ML / DL", "PyTorch, scikit-learn"),
+        ("LLM Tools", "Hugging Face, LangChain"),
+        ("Data Analysis", "NumPy, pandas"),
+        ("Web", "React"),
+        ("Cloud", "AWS, GCP"),
+        ("Version Control", "Git"),
     ],
     "languages_title": "Languages",
     "languages": [("Korean", "Native"), ("English", "IELTS Academic 7.0 (C1) | Oct 31, 2026")],
@@ -254,12 +257,12 @@ KO = {
         (
             "DentiScan",
             "데이터분석 캡스톤디자인  |  2026",
-            "정밀도 향상에 초점을 맞춘 RF-DETR과 Swin Transformer 기반 2단계 스크리닝 파이프라인입니다. RF-DETR 정밀도는 81.28%로 D-FINE의 63.78%보다 높았으며, 모델 실험과 백엔드 통합, AWS 배포에 참여했습니다.",
+            "RF-DETR + Swin Transformer로 오탐을 걸러내는 2단계 파이프라인입니다. 전체 Precision은 67.41%에서 80.63%로 상승했고 Recall은 73.25%에서 62.74%로 감소했습니다. 부위별·평균 신뢰도 점수를 보여주는 서비스를 AWS에 배포했습니다.",
         ),
         (
             "SS-TI",
             "식품영양학과 캡스톤디자인  |  2024",
-            "당류와 나트륨 관련 선행 연구 기반 40문항을 KMO와 Cronbach's alpha로 평가하고, 맞춤형 식생활 가이드를 제공하는 웹 설문을 구현했습니다.",
+            "당류·나트륨 관련 40문항을 KMO와 Cronbach's alpha로 평가한 웹 설문입니다. 개인별 피드백과 식생활 가이드로 사용자가 자신의 식습관을 이해하고 실천 가능한 개선 방법을 찾도록 돕습니다.",
         ),
         (
             "도서배달로봇 거점·경로 설계",
@@ -281,10 +284,13 @@ KO = {
     "coursework": "수강: Deep Learning, Natural Language, Information Systems and Databases, Parallel and Heterogeneous Computing Systems",
     "skills_title": "기술",
     "skills": [
-        ("프로그래밍", "Python, SQL, R, C++, JavaScript"),
-        ("웹", "HTML/CSS, JavaScript, React"),
-        ("클라우드", "AWS, GCP, Git"),
-        ("ML / 데이터", "PyTorch, scikit-learn, Hugging Face, LangChain, NumPy, pandas"),
+        ("언어", "Python, SQL, R, C++, JavaScript"),
+        ("ML / DL", "PyTorch, scikit-learn"),
+        ("LLM 도구", "Hugging Face, LangChain"),
+        ("데이터 분석", "NumPy, pandas"),
+        ("웹", "React"),
+        ("클라우드", "AWS, GCP"),
+        ("버전 관리", "Git"),
     ],
     "languages_title": "언어",
     "languages": [("한국어", "원어민"), ("영어", "IELTS Academic 7.0 (C1) | 2026.10.31")],
@@ -378,7 +384,7 @@ def build_resume(data: dict, lang: str, output_path: Path) -> None:
     details_col_w = (PAGE_W - 2 * MARGIN - details_gap) / 2
     skills_left_y = skills_y
     skills_right_y = skills_y
-    for label, detail in data["skills"][:2]:
+    for label, detail in data["skills"][:3]:
         skills_left_y = draw_paragraph(
             c,
             f"<b>{escape(label)}</b>  <font color='#66778f'>{escape(detail)}</font>",
@@ -386,9 +392,9 @@ def build_resume(data: dict, lang: str, output_path: Path) -> None:
             skills_left_y,
             details_col_w,
             styles["entry"],
-            6,
+            3,
         )
-    for label, detail in data["skills"][2:]:
+    for label, detail in data["skills"][3:]:
         skills_right_y = draw_paragraph(
             c,
             f"<b>{escape(label)}</b>  <font color='#66778f'>{escape(detail)}</font>",
@@ -396,7 +402,7 @@ def build_resume(data: dict, lang: str, output_path: Path) -> None:
             skills_right_y,
             details_col_w,
             styles["entry"],
-            6,
+            3,
         )
 
     languages_y = draw_section(
