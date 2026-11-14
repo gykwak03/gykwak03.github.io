@@ -56,8 +56,8 @@ export const experience: ExperienceItem[] = [
   {
     role: { en: "Research Intern", ko: "연구인턴" },
     org: {
-      en: "Cardio-Cerebrovascular Center, Severance Hospital, Yonsei University",
-      ko: "연세대학교 세브란스병원 뇌심혈관질환센터",
+      en: "Integrative Research Center for Cerebrovascular and Cardiovascular Diseases, Yonsei University College of Medicine",
+      ko: "연세대학교 의과대학 뇌심혈관질환연구센터",
     },
     period: { en: "Jul 2024 – Jul 2025", ko: "2024.07 – 2025.07" },
     location: { en: "Seoul", ko: "서울" },

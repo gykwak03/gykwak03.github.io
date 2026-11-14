@@ -170,7 +170,7 @@ EN = {
     ),
     "experience_title": "Experience",
     "experience_heading": "Research Intern",
-    "experience_meta": "Cardio-Cerebrovascular Center, Severance Hospital, Yonsei University  |  Jul 2024 - Jul 2025",
+    "experience_meta": "Integrative Research Center for Cerebrovascular and Cardiovascular Diseases, Yonsei University College of Medicine  |  Jul 2024 - Jul 2025",
     "experience_bullets": [
         "Led an end-to-end study of LLM-based clinical feature selection for ICU delirium prediction.",
         "Built a leakage-aware cohort of 32,574 first ICU stays, including 2,728 incident delirium cases, and operationalized 107 features from 11 studies as 151 MIMIC-IV variables.",
@@ -239,7 +239,7 @@ KO = {
     ),
     "experience_title": "경력",
     "experience_heading": "연구인턴",
-    "experience_meta": "연세대학교 세브란스병원 뇌심혈관질환센터  |  2024.07 - 2025.07",
+    "experience_meta": "연세대학교 의과대학 뇌심혈관질환연구센터  |  2024.07 - 2025.07",
     "experience_bullets": [
         "중환자실 섬망 예측을 위한 LLM 기반 임상 변수 선택 연구를 주도했습니다.",
         "첫 중환자실 입원 32,574건과 입실 24시간 이후 발생한 섬망 2,728건의 코호트를 구축하고, 연구 11편의 임상 특성 107개를 MIMIC-IV 변수 151개로 구현했습니다.",

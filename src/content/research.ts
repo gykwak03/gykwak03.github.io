@@ -24,8 +24,8 @@ export const research: ResearchItem[] = [
       ko: "LLM 기반 섬망 예측 핵심 변수 식별",
     },
     venue: {
-      en: "Cardio-Cerebrovascular Center, Severance Hospital",
-      ko: "세브란스병원 심뇌혈관센터",
+      en: "Integrative Research Center for Cerebrovascular and Cardiovascular Diseases, Yonsei University College of Medicine",
+      ko: "연세대학교 의과대학 뇌심혈관질환연구센터",
     },
     status: { en: "Manuscript under submission", ko: "논문 투고 중" },
     period: { en: "Jul 2024 – Jul 2025", ko: "2024.07 – 2025.07" },
